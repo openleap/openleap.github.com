@@ -78,7 +78,7 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="https://developer.leapmotion.com/forums/">LM dev forums</a></li>
-          <li><a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'time':elapsedfive, 'type': 'topbar'});" href="mailto:openleap@outlook.com">Contact</a></li>
+          <li><a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'topbar'});" href="mailto:openleap@outlook.com">Contact</a></li>
         </ul>
         <h3 class="muted">OpenLeap</h3>
       </div>
@@ -93,7 +93,7 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
         <p class="lead" style="
     color: black;
 ">The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 micrometers (!) in 8 cubic feet of wonderful, beautiful, magnificent interactivity. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.</p>
-        <a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'time':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap">See the GitHub organization</a>
+        <a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap">See the GitHub organization</a>
       </div>
 
       <hr>
@@ -104,10 +104,10 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
           <p>Started by Owen Versteeg as an open-source initiative for the Leap. Comment on the LM dev question and you shall be added to the organization!</p>
 
           <h4>What?</h4>
-          <p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; mixpanel.track('drawpad', {'time':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
+          <p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; mixpanel.track('drawpad', {'timeonpage':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
 
           <h4>Ooh! I have an idea for an app!</h4>
-          <p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'time':elapsedfive, 'type': 'idea'});" href="mailto:openleap@outlook.com">email</a> OpenLeap if you can't.</p>
+          <p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'idea'});" href="mailto:openleap@outlook.com">email</a> OpenLeap if you can't.</p>
         </div>
 
         <div class="span6">
@@ -118,14 +118,14 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
           <p>Just use GitHub's "transfer ownership" function; transfer the repo to OpenLeap.</p>
 
           <h4>I don't have a Leap!</h4>
-          <p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; mixpanel.track('apply_dev', {'time':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
+          <p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; mixpanel.track('apply_dev', {'timeonpage':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
         </div>
       </div>
 
       <hr>
 
       <div class="footer">
-        <p>MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; mixpanel.track('mp_logo_click', {'time':elapsed});" href="https://mixpanel.com/f/partner" style="
+        <p>MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; mixpanel.track('mp_logo_click', {'timeonpage':elapsed});" href="https://mixpanel.com/f/partner" style="
     float: right;
     margin-top: -8px;
 "><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"></a> </p>
