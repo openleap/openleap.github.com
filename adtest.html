@@ -70,6 +70,13 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+                                     <script type='text/javascript'>
+     $(document).ready(function () {
+     if ($("[rel=tooltip]").length) {
+     $("[rel=tooltip]").tooltip({placement:bottom});
+     }
+   });
+  </script>
   </head>
 
   <body>
@@ -87,13 +94,13 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
 
       <hr>
       
-      <div id="adsdiv" style="display: none; margin-top: -40px;">
+      <div id="adsdiv" style="display: none; margin-top: 35px;">
 	<!-- Begin BidVertiser code --> 
 	<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=510914&bid=1272354" type="text/javascript"></SCRIPT> <noscript><a href="http://www.bidvertiser.com">make money</a></noscript> 
 	<!-- End BidVertiser code -->
 	</div>
 
-      <div class="jumbotron" style="margin-top: -5px">
+      <div class="jumbotron" style="margin-top: 25px">
         <h1>OpenLeap</h1><h2 style="
     font-size: 49px;
     color: rgb(126, 126, 126);
@@ -101,8 +108,11 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
         <p class="lead" style="
     color: black;
 ">The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 µm (!) in 8 cubic feet of 3D space. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.</p>
-        <a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap">See the GitHub organization</a>
-      </div>
+
+	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap"><i class="icon-white icon-eye-open"> </i> See the GitHub organization</a>
+	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('showads', {'timeonpage':elapsedfour});" class="btn btn-large btn-primary" rel="tooltip" data-original-title="Enables one text ad. 50% of click profits go to charity and 50% go to OpenLeap."><i class="icon-white icon-heart"></i> Help OpenLeap &amp; charity!</a>
+	
+</div>
 
       <hr>
 
