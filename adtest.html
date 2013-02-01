@@ -73,7 +73,7 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
                                      <script type='text/javascript'>
      $(document).ready(function () {
      if ($("[rel=tooltip]").length) {
-     $("[rel=tooltip]").tooltip({placement:bottom});
+     $("[rel=tooltip]").tooltip({placement:'bottom'});
      }
    });
   </script>
@@ -110,7 +110,8 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
 ">The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 µm (!) in 8 cubic feet of 3D space. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.</p>
 
 	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap"><i class="icon-white icon-eye-open"> </i> See the GitHub organization</a>
-	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('showads', {'timeonpage':elapsedfour});" class="btn btn-large btn-primary" rel="tooltip" data-original-title="Enables one text ad. 50% of click profits go to charity and 50% go to OpenLeap."><i class="icon-white icon-heart"></i> Help OpenLeap &amp; charity!</a>
+	<a onclick="$('#adsdiv')[0].style.display = 'block'; var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('showads', {'timeonpage':elapsedfour});" class="btn btn-large btn-primary" rel="tooltip" data-original-title="Enables one text ad. 50% of click profits go to charity and 50% go to OpenLeap."><i class="icon-white icon-heart"></i> Help OpenLeap &amp; charity!</a>	
+
 	
 </div>
 
