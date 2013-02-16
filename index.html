@@ -12,13 +12,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
-e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
+    <script type="text/javascript">
+  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+  analytics.load("s4fkhngwx9");
+</script>
+  
     <!-- Le styles -->
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <style type="text/css">
@@ -87,7 +87,7 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="https://developer.leapmotion.com/forums/">LM dev forums</a></li>
-          <li><a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'topbar'});" href="mailto:openleap@outlook.com">Contact</a></li>
+          <li><a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; analytics.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'topbar'});" href="mailto:openleap@outlook.com">Contact</a></li>
         </ul>
         <h3 class="muted">OpenLeap</h3>
       </div>
@@ -109,8 +109,8 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
     color: black;
 ">The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 µm (!) in 8 cubic feet of 3D space. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.</p>
 
-	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap"><i class="icon-white icon-eye-open"> </i> See the GitHub organization</a>
-	<a onclick="$('#adsdiv')[0].style.display = 'block'; var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; mixpanel.track('showads', {'timeonpage':elapsedfour});" class="btn btn-large btn-primary" rel="tooltip" data-original-title="Enables an ad (usually text.) 1/2 of click profits go to charity; 1/2 go to OpenLeap."><i class="icon-white icon-heart"></i> Help OpenLeap &amp; charity!</a>
+	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; analytics.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap"><i class="icon-white icon-eye-open"> </i> See the GitHub organization</a>
+	<a onclick="$('#adsdiv')[0].style.display = 'block'; var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; analytics.track('showads', {'timeonpage':elapsedfour});" class="btn btn-large btn-primary" rel="tooltip" data-original-title="Enables an ad (usually text.) 1/2 of click profits go to charity; 1/2 go to OpenLeap."><i class="icon-white icon-heart"></i> Help OpenLeap &amp; charity!</a>
 	
 </div>
 
@@ -122,10 +122,10 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
           <p>Started by Owen Versteeg as an open-source initiative for the Leap.</p>
 
           <h4>What?</h4>
-          <p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; mixpanel.track('drawpad', {'timeonpage':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
+          <p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; analytics.track('drawpad', {'timeonpage':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
 
           <h4>Ooh! I have an idea for an app!</h4>
-          <p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; mixpanel.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'idea'});" href="mailto:openleap@outlook.com">email</a> OpenLeap if you can't.</p>
+          <p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; analytics.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'idea'});" href="mailto:openleap@outlook.com">email</a> OpenLeap if you can't.</p>
         </div>
 
         <div class="span6">
@@ -136,14 +136,14 @@ mixpanel.init("a494cd1120f916696a47e1d0d870c93f");</script><!-- end Mixpanel -->
           <p>Just use GitHub's "transfer ownership" function; transfer the repo to OpenLeap.</p>
 
           <h4>I don't have a Leap!</h4>
-          <p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; mixpanel.track('apply_dev', {'timeonpage':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
+          <p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; analytics.track('apply_dev', {'timeonpage':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
         </div>
       </div>
 
       <hr>
 
       <div class="footer">
-        <p>MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; mixpanel.track('mp_logo_click', {'timeonpage':elapsed});" href="https://mixpanel.com/f/partner" style="
+        <p>MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; analytics.track('mp_logo_click', {'timeonpage':elapsed});" href="https://analytics.com/f/partner" style="
     float: right;
     margin-top: -8px;
 "><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"></a> </p>
@@ -279,8 +279,8 @@ function gLIP() {
     $.getJSON("http://www.bigrectangle.com/scripts/getip.php",
     function(data){ ip=data.ip.toString();
       console.log(ip);
-      mixpanel.track("pageload", {"ipaddr": ip.toString(), "screenheight":screen.height, "screenwidth":screen.width, "useragent": navigator.userAgent, "windowheight": $(window).height(), "windowwidth": $(window).width(), "browser": BrowserDetect.browser, "browsernum": BrowserDetect.version, "os": BrowserDetect.OS});
-        mixpanel.people.set({
+      analytics.track("pageload", {"ipaddr": ip.toString(), "screenheight":screen.height, "screenwidth":screen.width, "useragent": navigator.userAgent, "windowheight": $(window).height(), "windowwidth": $(window).width(), "browser": BrowserDetect.browser, "browsernum": BrowserDetect.version, "os": BrowserDetect.OS});
+        analytics.people.set({
     "$last_login": new Date(),
     "$last_ua": navigator.userAgent,
     "$last_ip": ip.toString(),
