@@ -1,185 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      var start = new Date();
-    </script>
-    <meta charset="utf-8">
-    <title>OpenLeap &middot; Open-source Leap programs</title>
-    
-    <meta name="google-site-verification" content="ThATUpL5JNSpB7zmy6Y0W5BdSOLSw0T-ib9Y8em-3H4" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript">
+	<head>
+		<script>
+			var start = new Date();
+		</script>
+		<meta charset="utf-8">
+		<title>OpenLeap &middot; Open-source Leap programs</title>
+		
+		<meta name="google-site-verification" content="ThATUpL5JNSpB7zmy6Y0W5BdSOLSw0T-ib9Y8em-3H4" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38523799-1']);
-  _gaq.push(['_setDomainName', 'openleap.org']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-38523799-1']);
+			_gaq.push(['_setDomainName', 'openleap.org']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 
-</script>
-    <script type="text/javascript">
-  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
-  analytics.load("s4fkhngwx9");
-</script>
-  
-    <!-- Le styles -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
+		</script>
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-                                     <script type='text/javascript'>
-     $(document).ready(function () {
-     if ($("[rel=tooltip]").length) {
-     $("[rel=tooltip]").tooltip({placement:'bottom'});
-     }
-   });
-  </script>
-  </head>
-
-  <body>
-
-    <div class="container-narrow" style="max-width: 728px;">
-
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="https://developer.leapmotion.com/forums/">LM dev forums</a></li>
-          <li><a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; analytics.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'topbar'});" href="mailto:openleap@outlook.com">Contact</a></li>
-        </ul>
-        <h3 class="muted">OpenLeap</h3>
-      </div>
-
-      <hr>
-      
-      <div id="adsdiv" style="display: none; margin-top: 35px;">
-	<!-- Begin BidVertiser code --> 
-	<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://bdv.bidvertiser.com/BidVertiser.dbm?pid=510914&bid=1272354" type="text/javascript"></SCRIPT> <noscript><a href="http://www.bidvertiser.com">make money</a></noscript> 
-	<!-- End BidVertiser code -->
-	</div>
-
-      <div class="jumbotron" style="margin-top: 25px">
-        <h1>OpenLeap</h1><h2 style="
-    font-size: 49px;
-    color: rgb(126, 126, 126);
-">Open-source Leap software</h2>
-        <p class="lead" style="
-    color: black;
-">The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 µm (!) in 8 cubic feet of 3D space. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.</p>
-
-	<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; analytics.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap"><i class="icon-white icon-eye-open"> </i> See the GitHub organization</a>
+		<script type="text/javascript">
+		var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+		analytics.load("s4fkhngwx9");
+		</script>
 	
-</div>
+		<!-- Le styles: Min Framework v. 1.0 -->
+		<style type="text/css">
+			body{font-family:Helvetica,sans-serif;text-align:center;margin:0;font-size:16px}hr{margin:2.5em auto}hr.mediumwidth{margin:2.5em auto}a{text-decoration:none}.mediumwidth{font-size:16px;width:40%;margin-left:30%;margin-top:.3em;margin-bottom:.3em}@media(max-width:870px){.mediumwidth{width:70%;margin-left:15%}}@media(max-width:520px){.mediumwidth{width:100%;margin-left:0}hr.mediumwidth{width:auto}}.thin{font-weight:100}h1{font-size:4em;margin:0}h1.title{font-size:7em}h2{font-size:2em}button{background:#afafaf;font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;color:#f3f3f3 !important;display:inline-block;font-size:2.5em;padding:15px 40px 16px;text-align:center;text-decoration:none;margin:.3em .7em .3em .7em;border:1px solid #000;cursor:pointer}button.smooth{transition:background-color .15s ease-in-out}button.btn-a{background:#345eb3;border:1px solid #1d3464}button.btn-a:hover{background:#29498b}button.btn-a:active{background:#1d3464}button.btn-b{background:#51a351;border:1px solid #2f5f2f}button.btn-b:hover{background:#408140}button.btn-b:active{background:#2f5f2f}button.btn-c{background:#da2727;border:1px solid #841717}button.btn-c:hover{background:#b01e1e}button.btn-c:active{background:#841717}button.btn-small{padding:7px 19px 10px;font-size:16px}.navbar{width:100%;background:black;color:white;text-align:left;height:1.5em;padding:1em 0 .6em}.pagename{color:white;padding:0 1em 0 2em;font-weight:bold}.navbar-link{padding:.5em;color:#aaa}.navbar-link:hover{color:white}@media(max-width:500px){.navbar a{text-align:center;display:block}.navbar{height:7.5em}}.ie .mediumwidth{width:70%;margin-left:0}.ie .mediumwidth hr{margin:100px auto;padding-left:200px}.row{display:block;line-height:2em;margin-top:2%;height:2em}.ie column{margin:auto .7%}column{display:inline-block;float:left;margin:auto 1%}.c10{width:98%}.c9{width:88%}.c8{width:78%}.c7{width:68%}.c6{width:58%}.c5{width:48%}.c4{width:38%}.c3{width:28%}.c2{width:18%}.c1{width:8%}@media(max-width:720px){row [class*='c']{width:100%;display:block;margin:1% auto}row:last-child column{margin-bottom:2.5em}}
 
-      <hr>
+			h4 {
+				margin: 0;
+			}
 
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Who?</h4>
-          <p>Started by Owen Versteeg as an open-source initiative for the Leap.</p>
+			p {
+				margin-bottom: 2.5em;
+			}
 
-          <h4>What?</h4>
-          <p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; analytics.track('drawpad', {'timeonpage':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
+			.largewidth {
+				width: 60%;
+				margin-left: 20%;
+			}
 
-          <h4>Ooh! I have an idea for an app!</h4>
-          <p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; analytics.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'idea'});" href="mailto:openleap@outlook.com">email</a> OpenLeap if you can't.</p>
-        </div>
+		</style>
+	</head>
 
-        <div class="span6">
-          <h4>Why?</h4>
-          <p>Many Leap developers asked for a good community site where they could share projects and see examples - so here one is!</p>
+	<body>
+		<div class="mediumwidth largewidth" style="margin-top: 0;">
+			<div class="navbar">
+				<a class="pagename" href="#">OpenLeap</a>
+				<a class="navbar-link" href="mailto:contact@openleap.org">Email</a>
+				<a class="navbar-link" href="http://leapmotion.com">Leap</a>
+				<a class="navbar-link" href="https://developer.leapmotion.com/forums/">Forums</a>
+			</div>
+		</div>
+		
+		<div>
+			<div class="mediumwidth largewidth" style="margin-top: 25px">
+				<h1>OpenLeap</h1>
+				<h2 style="font-size: 49px; color: rgb(126, 126, 126);margin:0.3em;">Open-source Leap software</h2>
+				<p class="lead" style="color: black; font-size:1.3em; margin-bottom: 0.8em;">
+					The <a href="http://leapmotion.com">Leap</a> is an incredible new motion-tracking device from Leap Motion. It tracks movements up to 10 µm (!) in 8 cubic feet of 3D space. OpenLeap is a community of open-source enthusiasts making software for this wonderful device.
+				</p>
 
-          <h4>How do I add a repo?</h4>
-          <p>Just use GitHub's "transfer ownership" function; transfer the repo to OpenLeap.</p>
+				<a onclick="var elapsedfour = new Date() - start; elapsedfour=Math.round(elapsedfour/100)/10; analytics.track('githuborg', {'timeonpage':elapsedfour});" class="btn btn-large btn-success" href="http://github.com/openleap">
+					<button class="smooth btn-b">OpenLeap at GitHub</button>
+				</a>
+			</div>
 
-          <h4>I don't have a Leap!</h4>
-          <p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; analytics.track('apply_dev', {'timeonpage':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
-        </div>
-      </div>
+			<hr class="largewidth">
 
-      <hr>
+			<div class="mediumwidth largewidth" style="text-align: left;">
+				<row>
+					<column class="c5">
+						<h4>Who?</h4>
+						<p>Started by Owen Versteeg as an open-source initiative for the Leap. Currently at 118 members and counting.</p>
+					</column>
 
-      <div class="footer">
-        <p>MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; analytics.track('mp_logo_click', {'timeonpage':elapsed});" href="https://analytics.com/f/partner" style="
-    float: right;
-    margin-top: -8px;
-"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"></a> </p>
-      </div>
+					<column class="c5">
+						<h4>Why?</h4>
+						<p>Many Leap developers asked for a good community site where they could share projects and see examples - so here one is!</p>
+					</column>
+				</row>
 
-    </div> <!-- /container -->
+				<row>
+					<column class="c5">
+						<h4>What?</h4>
+						<p>A bunch of open-source applications that use the Leap. One example is <a onclick="var elapsedthree = new Date() - start; elapsedthree=Math.round(elapsedthree/100)/10; analytics.track('drawpad', {'timeonpage':elapsedthree});" href="http://openleap.github.com/drawpad">DrawPad</a>.</p>
+					</column>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-    
-    <script>
-      var BrowserDetect = {
-    init: function () {
-  	this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+					<column class="c5">
+						<h4>How do I add a repo?</h4>
+						<p>Just use GitHub's "transfer ownership" function; transfer the repo to OpenLeap.</p>
+					</column>
+				</row>
+
+				<row>
+					<column class="c5">
+						<h4>Ooh! I have an idea for an app!</h4>
+						<p>Awesome! Create a repo if you can code, or <a onclick="var elapsedfive = new Date() - start; elapsedfive=Math.round(elapsedfive/100)/10; analytics.track('email', {'timeonpage':elapsedfive, 'typeofclick': 'idea'});" href="mailto:contact@openleap.org">contact</a> OpenLeap if you can't.</p>
+					</column>
+
+					<column class="c5">
+						<h4>I don't have a Leap!</h4>
+						<p>Well, not everyone's awesome enough to get one of the awesome top-secret prototypes - but you might be! Apply <a onclick="var elapsedtwo = new Date() - start; elapsedtwo=Math.round(elapsedtwo/100)/10; analytics.track('apply_dev', {'timeonpage':elapsedtwo});" href="http://leapmotion.com/developers">here</a>.</p>
+					</column>
+				</row>
+			</div>
+
+			<hr class="largewidth">
+
+			<div class="footer mediumwidth largewidth">
+				<p style="text-align:left;">MIT licensed.<a onclick="var elapsed = new Date() - start; elapsed=Math.round(elapsed/100)/10; analytics.track('mp_logo_click', {'timeonpage':elapsed});" href="https://analytics.com/f/partner" style="
+		float: right;
+		margin-top: -8px;
+"><img src="http://cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"></a> </p>
+			</div>
+
+		</div> <!-- /container -->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		
+		<script>
+			var BrowserDetect = {
+		init: function () {
+		this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
 		this.version = this.searchVersion(navigator.userAgent)
 			|| this.searchVersion(navigator.appVersion)
 			|| "an unknown version";
 		this.OS = this.searchString(this.dataOS) || "an unknown OS";
 	},
 	searchString: function (data) {
-		for (var i=0;i<data.length;i++)	{
+		for (var i=0;i<data.length;i++) {
 			var dataString = data[i].string;
 			var dataProp = data[i].prop;
 			this.versionSearchString = data[i].versionSearch || data[i].identity;
@@ -202,7 +165,7 @@
 			subString: "Chrome",
 			identity: "Chrome"
 		},
-		{ 	string: navigator.userAgent,
+		{   string: navigator.userAgent,
 			subString: "OmniWeb",
 			versionSearch: "OmniWeb/",
 			identity: "OmniWeb"
@@ -238,7 +201,7 @@
 			subString: "Camino",
 			identity: "Camino"
 		},
-		{		// for newer Netscapes (6+)
+		{   // for newer Netscapes (6+)
 			string: navigator.userAgent,
 			subString: "Netscape",
 			identity: "Netscape"
@@ -255,7 +218,7 @@
 			identity: "Mozilla",
 			versionSearch: "rv"
 		},
-		{ 		// for older Netscapes (4-)
+		{     // for older Netscapes (4-)
 			string: navigator.userAgent,
 			subString: "Mozilla",
 			identity: "Netscape",
@@ -274,10 +237,10 @@
 			identity: "Mac"
 		},
 		{
-			   string: navigator.userAgent,
-			   subString: "iPhone",
-			   identity: "iPhone/iPod"
-	    },
+				 string: navigator.userAgent,
+				 subString: "iPhone",
+				 identity: "iPhone/iPod"
+			},
 		{
 			string: navigator.platform,
 			subString: "Linux",
@@ -289,29 +252,29 @@
 BrowserDetect.init();
 
 function gLIP() {
-    $.getJSON("http://www.bigrectangle.com/scripts/getip.php",
-    function(data){ ip=data.ip.toString();
-      console.log(ip);
-      analytics.track("pageload", {"ipaddr": ip.toString(), "screenheight":screen.height, "screenwidth":screen.width, "useragent": navigator.userAgent, "windowheight": $(window).height(), "windowwidth": $(window).width(), "browser": BrowserDetect.browser, "browsernum": BrowserDetect.version, "os": BrowserDetect.OS});
-        analytics.people.set({
-    "$last_login": new Date(),
-    "$last_ua": navigator.userAgent,
-    "$last_ip": ip.toString(),
-    "$last_browser": BrowserDetect.browser, 
-    "$last_browser_num": BrowserDetect.version,
-    "$last_screen_height":screen.height, 
-    "$last_screen_width":screen.width,
-    "$last_window_height": $(window).height(), 
-    "$last_window_width": $(window).width(),
-    "$last_os": BrowserDetect.OS,
-    "$referrer": document.referrer
+		$.getJSON("http://www.bigrectangle.com/scripts/getip.php",
+		function(data){ ip=data.ip.toString();
+			console.log(ip);
+			analytics.track("pageload", {"ipaddr": ip.toString(), "screenheight":screen.height, "screenwidth":screen.width, "useragent": navigator.userAgent, "windowheight": $(window).height(), "windowwidth": $(window).width(), "browser": BrowserDetect.browser, "browsernum": BrowserDetect.version, "os": BrowserDetect.OS});
+				analytics.people.set({
+		"$last_login": new Date(),
+		"$last_ua": navigator.userAgent,
+		"$last_ip": ip.toString(),
+		"$last_browser": BrowserDetect.browser, 
+		"$last_browser_num": BrowserDetect.version,
+		"$last_screen_height":screen.height, 
+		"$last_screen_width":screen.width,
+		"$last_window_height": $(window).height(), 
+		"$last_window_width": $(window).width(),
+		"$last_os": BrowserDetect.OS,
+		"$referrer": document.referrer
 	});
 
-  });
+	});
 }
 
 gLIP();
-    </script>
+		</script>
 
-  </body>
+	</body>
 </html>
